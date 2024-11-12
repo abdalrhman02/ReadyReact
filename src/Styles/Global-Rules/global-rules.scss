@@ -1,0 +1,54 @@
+*{margin:0; padding:0;}
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+// Elements
+a{text-decoration:none; color:black}
+ul{list-style-type:none;}
+
+// Classes
+.disFlex{display:flex;}
+.disNone{display:none;}
+.disBlock{display:block;}
+.container{
+    margin: 0 90px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .container {
+        margin: 0 40px
+    }
+}
+
+.btn {
+    background-color: $s-clr;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    width: 5em;
+    height: 1.7em;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $button-hover
+    }
+}
+
+
+// Mixins
+@mixin center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin fl-sb {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}

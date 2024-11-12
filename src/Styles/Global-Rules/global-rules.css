@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.disFlex {
+  display: flex;
+}
+
+.disNone {
+  display: none;
+}
+
+.disBlock {
+  display: block;
+}
+
+.container {
+  margin: 0 90px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+.btn {
+  background-color: #00CE7F;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  width: 5em;
+  height: 1.7em;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #01b872;
+}/*# sourceMappingURL=global-rules.css.map */

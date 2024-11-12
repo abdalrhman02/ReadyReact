@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --f-color: #165981;
+        --s-color: #2F6F97;
+        --text-color: #FFFFFF;
+        --text-s-color: #DDDDDD;
+        --background-color: #001F3F;
+        --gradient-color: #6A9AB0;
+    }
+    .light {
+        --f-color: #212121;
+        --s-color: #212121;
+        --text-color: #212121;
+        --text-s-color: #4F4F4F;
+        --background-color: #FFFFFF;
+        --gradient-color: #3F3F3F;
+    }
+}
